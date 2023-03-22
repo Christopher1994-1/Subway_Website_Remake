@@ -15,14 +15,42 @@
 {% endblock ad %}
 
 
-<br><br>
+<br>
 
 {% block menu %}
     {% include 'index_items/menu_items_carousel.html' %}
 {% endblock menu %}
 
 
-<br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br>
+
+
+{% block rewards %}
+    {% include 'index_items/rewards_and_deals.html' %}
+{% endblock rewards %}
+
+
+<br><br><br><br>
+
+
+{% block bestSellers %}
+    {% include 'index_items/bestSellers.html' %}
+{% endblock bestSellers %}
+
+
+<br><br><br><br>
+
+
+
+{% block second_to_last %}
+    {% include 'index_items/second_to_last.html' %}
+{% endblock second_to_last %}
+
+
+
+
+
 
 <div class="smaller_screen_button">
     <a href="#"><button>START ORDER/MENU</button></a>

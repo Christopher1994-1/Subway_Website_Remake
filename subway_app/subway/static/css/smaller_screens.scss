@@ -240,6 +240,242 @@ $border_white: 2px solid white;
             }
         }
     }
+
+    .rewards_and_deals_main_container {
+        width: 100%;
+        margin: auto;
+        height: 700px;
+    
+        .rewards {
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            position: relative;
+            margin: auto;
+    
+    
+    
+            .deal_black_one {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+    
+                h1 {
+                    font-size: 35px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 110px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 29%;
+                    height: 250px;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+    
+            .deal_white {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: rgb(255, 255, 255);
+    
+                h1 {
+                    font-size: 35px;
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                }
+    
+                a {
+                    color: rgb(0, 0, 0);
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 100px;
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: $company_color;
+                            color: white;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 29%;
+                    height: 250px;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+    
+    
+            .deal_black_two {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+    
+                h1 {
+                    font-size: 35px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 35px;
+                    margin-bottom: 34px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+    }
+
+
+    // CSS for the Best Seller Container
+    .best_sellers_main_container {
+        width: 85%;
+        margin: auto;
+
+        .sellers {
+            display: flex;
+            justify-content: space-around;
+
+
+            .item {
+                border: 2px solid rgba(175, 175, 175, 0.699);
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+                img {
+                    width: 160px;
+                    height: 120px;
+                }
+
+
+                h1 {
+                    font-size: 17px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -557,6 +793,44 @@ $border_white: 2px solid white;
         }
     }
     }
+
+
+    // CSS for the Best Seller Container
+    .best_sellers_main_container {
+        width: 85%;
+        margin: auto;
+
+        .sellers {
+            display: flex;
+            justify-content: space-around;
+
+
+            .item {
+                border: 2px solid rgba(175, 175, 175, 0.699);
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+                img {
+                    width: 120px;
+                    height: 90px;
+                }
+
+
+                h1 {
+                    font-size: 15px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -616,7 +890,252 @@ $border_white: 2px solid white;
 }
 
 
+// CSS for @Media for 952PX
+@media(max-width:952px) {
+    .rewards_and_deals_main_container {
+        width: 100%;
+        margin: auto;
+        height: 700px;
+    
+        .rewards {
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            position: relative;
+            margin: auto;
+    
+    
+    
+            .deal_black_one {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 60px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 29%;
+                    height: 250px;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+    
+            .deal_white {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: rgb(255, 255, 255);
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: rgb(0, 0, 0);
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 80px;
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: $company_color;
+                            color: white;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 29%;
+                    height: 250px;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+    
+    
+            .deal_black_two {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 35px;
+                    margin-bottom: 34px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+    }
+}
 
+
+// CSS for @Media for 908PX
+@media(max-width:908px) {
+    // CSS for the Best Seller Container
+    .best_sellers_main_container {
+        width: 85%;
+        margin: auto;
+
+        .sellers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            justify-items: center;
+
+
+            .item {
+                border: 2px solid rgba(175, 175, 175, 0.699);
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+                img {
+                    width: 160px;
+                    height: 120px;
+                }
+
+
+                h1 {
+                    font-size: 15px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+}
 
 // CSS for @Media for 702PX
 @media(max-width:702px) {
@@ -730,5 +1249,306 @@ $border_white: 2px solid white;
     .wrapper {
         height: 100%;
     } 
+
+}
+
+
+
+// CSS for @Media for 830PX
+@media(max-width:830px) {
+    .rewards_and_deals_main_container {
+        width: 100%;
+        margin: auto;
+        height: 700px;
+        margin-bottom: 110px;
+    
+        .rewards {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+            margin: auto;
+    
+    
+    
+            .deal_black_one {
+                display: flex;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+                padding: 10px;
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 60px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    display: none;
+                }
+            }
+    
+            .deal_white {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: rgb(0, 0, 0);
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 80px;
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: $company_color;
+                            color: white;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    display: none;
+                }
+            }
+    
+    
+            .deal_black_two {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+                padding: 10px;
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 35px;
+                    margin-bottom: 34px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+// CSS for @Media for 631PX
+@media(max-width:631px) {
+    // CSS for the Best Seller Container
+    .best_sellers_main_container {
+        width: 85%;
+        margin: auto;
+
+        .sellers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            justify-items: center;
+
+
+            .item {
+                border: 2px solid rgba(175, 175, 175, 0.699);
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+                img {
+                    width: 140px;
+                    height: 100px;
+                }
+
+
+                h1 {
+                    font-size: 15px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+}
+
+
+// CSS for @Media for 525PX
+@media(max-width:525px) {
+
+    .rewards_and_deals_main_container {
+        margin-bottom: 150px;
+    }
+
+    // CSS for the Best Seller Container
+    .best_sellers_main_container {
+        width: 85%;
+        margin: auto;
+
+        .sellers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            justify-items: center;
+
+
+            .item {
+                border: 2px solid rgba(175, 175, 175, 0.699);
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+                img {
+                    width: 120px;
+                    height: 80px;
+                }
+
+
+                h1 {
+                    font-size: 13px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+
+    .smaller_screen_button {
+        a {
+            button {
+                width: 100%;
+            }
+        }
+    }
 
 }
