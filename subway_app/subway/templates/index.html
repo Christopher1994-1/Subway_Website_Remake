@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>Home | Subway</title>
+{% endblock title %}
+
+
+
+{% block content %}
+
+{% block ad %}
+    {% include 'index_items/front_ads.html' %}
+{% endblock ad %}
+
+
+<br><br>
+
+{% block menu %}
+    {% include 'index_items/menu_items_carousel.html' %}
+{% endblock menu %}
+
+
+<br><br><br><br><br><br><br><br>
+
+<div class="smaller_screen_button">
+    <a href="#"><button>START ORDER/MENU</button></a>
+</div>
+
+{% endblock content %}

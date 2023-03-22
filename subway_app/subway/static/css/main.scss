@@ -1,0 +1,476 @@
+// Global Variables ======
+$company_color: #009132;
+$border_black: 2px solid black;
+$border_white: 2px solid white;
+
+
+
+// CSS code for the ~ NAVBAR ~
+.main-navbar-container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+    // CSS for the first div holding the company logo and links
+    .first {
+        display: flex;
+        align-items: center;
+        width: 75%;
+
+
+        .hambuger_menu {
+            display: none;
+            
+
+            label {
+                font-size: 35px;
+                cursor: pointer;
+            }
+
+            input {
+                display: none;
+            }
+
+            .dropdown {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(255, 255, 255);
+                left: 0;
+                top: 0;
+                list-style: none;
+                text-align: center;
+                display: none;
+                padding: 25px;
+
+                .x-icons {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+
+                    .x {
+                        i {
+                            font-size: 35px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .icons {
+                    i {
+                        border: 1px solid black;
+                        border-radius: 100px;
+                        padding: 5px;
+                        cursor: pointer;
+                        margin-left: 10px;
+                    }
+                }
+
+                li {
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    border-bottom: 1px solid rgb(161, 161, 161);
+
+                    a {
+                        text-decoration: none;
+                        font-size: 25px;
+                        font-weight: bold;
+                        color: black;
+
+                    }
+                }
+            }
+        }
+
+
+
+
+        // CSS for the Company Logo Container
+        .company-logo {
+            border-right: 2px solid rgb(201, 201, 201);
+            margin-right: 10px;
+            padding-right: 10px;
+
+
+            img {
+                width: 200px;
+                height: 40px;
+            }
+        }
+
+        // CSS for the Navbar Links
+        .navbar-links {
+
+            a {
+                text-decoration: none;
+                color: black;
+                margin-right: 12px;
+                font-weight: 500;
+            }
+
+            a:hover {
+                color: $company_color;
+                font-weight: bold;
+            }
+
+        }
+    }
+
+
+    // CSS for the second div holdings the button and icons
+    .button-icons {
+        width: 20%;
+
+        a {
+            button {
+                padding: 10px;
+                background-color: $company_color;
+                font-size: 20px;
+                font-weight: 500;
+                color: rgb(255, 255, 255);
+                width: 70%;
+                border-radius: 10px;
+                border: none;
+            }
+        }
+
+        i {
+            border: 1px solid black;
+            border-radius: 100px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+
+// CSS for the main button when screen is smaller
+.smaller_screen_button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding: 10px;
+    display: none;
+    background-color: white;
+
+    a {
+        button {
+            padding: 15px;
+            background-color: $company_color;
+            border: none;
+            width: 80%;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+
+        }
+    }
+}
+
+
+// CSS code for the first slide ad
+.ad1 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .left_side {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        h1 {
+            font-size: 4.5em;
+            width: 90%;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+
+        p {
+            width: 90%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 20%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+// CSS code for the second slide ad
+.ad2 {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .left_side {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        h1 {
+            font-size: 4.5em;
+            width: 80%;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+
+        p {
+            width: 75%;
+            font-weight: bold;
+            color: white;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 40%;
+                background-color: white;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+// CSS for the slider ad section
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+
+// CSS code for the menu
+.main-menu-container {
+    img {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+      }
+
+    h2 {
+        text-align:center;
+        padding-bottom: 1em;
+    }
+
+    .slick-dots {
+        text-align: center;
+        margin: 0 0 10px 0;
+        padding: 0;
+
+        li {
+            display:inline-block;
+            margin-left: 4px;
+            margin-right: 4px;
+            &.slick-active {
+                button {
+                    background-color:black;
+            }
+        }
+
+        button {
+          font: 0/0 a;
+          text-shadow: none;
+          color: transparent;
+          background-color:#999;
+          border:none;
+          width: 15px;
+          height: 15px;
+          border-radius:50%;
+        }
+        :hover{
+            background-color: black;
+            }
+      }
+    }
+
+
+    /* Custom Arrow */
+    .prev{
+        color: #999;
+        position: absolute;
+        top: 38%;
+        left: -2em;
+        font-size: 1.5em;
+            :hover{
+                cursor: pointer;
+                color: black;
+            }
+    }
+    .next{
+        color: #999;
+        position: absolute;
+        top: 38%;
+        right: -2em;
+        font-size: 1.5em;
+        :hover{
+                cursor: pointer;
+                color: black;
+            }
+    }
+
+
+
+
+
+
+      
+}
+
+
+
+
+
+// CSS for the menu items slider
+.main-con {
+    width: 100%;
+    margin-top: 40px;
+
+    .cards-wrapper {
+        display: flex;
+        justify-content: center;
+        height: auto;
+      }
+      .card {
+        margin: 0 0.5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border-radius: 0;
+        height: fit-content;
+        border-radius: 10px;
+
+        .some {
+
+            img {
+                width: 300px;
+                height: 290px;
+    
+            }
+
+        }
+
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        background-color: #6b6b6b;
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+    //   @media(max-width:1115px) {
+    //     .card {
+    //         margin: 0 0.5em;
+    //         box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    //         border-radius: 0;
+    //         height: fit-content;
+    
+    //         .some {
+    
+    //             img {
+    //                 width: 15em;
+    //                 height: 15em;
+        
+    //             }
+    
+    //         }
+    
+    //       }
+
+    //   }
+    //   @media(max-width:1028px) {
+    //     .card {
+    //         margin: 0 0.5em;
+    //         box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    //         border-radius: 0;
+    //         height: fit-content;
+    
+    //         .some {
+    
+    //             img {
+    //                 width: 13em;
+    //                 height: 13em;
+        
+    //             }
+    
+    //         }
+    
+    //       }
+
+    //   }
+    //   @media(max-width:905px) {
+    //     .card {
+    //         margin: 0 0.5em;
+    //         box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    //         border-radius: 0;
+    //         height: fit-content;
+    
+    //         .some {
+    
+    //             img {
+    //                 width: 10em;
+    //                 height: 10em;
+        
+    //             }
+
+    //             h5 {
+    //                 font-size: 13px;
+    //             }
+    
+    //         }
+    
+    //       }
+
+    //   }
+}

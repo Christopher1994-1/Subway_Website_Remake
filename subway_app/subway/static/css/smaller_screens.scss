@@ -1,0 +1,734 @@
+// Global Variables ======
+$company_color: #009132;
+$border_black: 2px solid black;
+$border_white: 2px solid white;
+
+
+
+
+
+
+// CSS for @Media for 1115PX
+@media(max-width:1115px) {
+    // CSS code for the ~ NAVBAR ~
+    .main-navbar-container {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+        // CSS for the first div holding the company logo and links
+        .first {
+            display: flex;
+            align-items: center;
+            width: 75%;
+
+
+            .hambuger_menu {
+                
+
+                label {
+                    font-size: 35px;
+                    cursor: pointer;
+                }
+
+                input {
+                    display: none;
+                }
+
+                .dropdown {
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(255, 255, 255);
+                    left: 0;
+                    top: 0;
+                    list-style: none;
+                    text-align: center;
+                    display: none;
+                    padding: 25px;
+
+                    .x-icons {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .x {
+                            i {
+                                font-size: 35px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .icons {
+                        i {
+                            border: 1px solid black;
+                            border-radius: 100px;
+                            padding: 5px;
+                            cursor: pointer;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    li {
+                        margin-bottom: 15px;
+                        padding: 10px;
+                        border-bottom: 1px solid rgb(161, 161, 161);
+
+                        a {
+                            text-decoration: none;
+                            font-size: 25px;
+                            font-weight: bold;
+                            color: black;
+
+                        }
+                    }
+                }
+            }
+
+
+
+
+            // CSS for the Company Logo Container
+            .company-logo {
+                border-right: 2px solid rgb(201, 201, 201);
+                margin-right: 10px;
+                padding-right: 10px;
+
+
+                img {
+                    width: 200px;
+                    height: 40px;
+                }
+            }
+
+            // CSS for the Navbar Links
+            .navbar-links {
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-right: 12px;
+                    font-weight: 500;
+                }
+
+                a:hover {
+                    color: $company_color;
+                    font-weight: bold;
+                }
+
+            }
+        }
+
+
+        // CSS for the second div holdings the button and icons
+        .button-icons {
+            width: 25%;
+            text-align: right;
+
+            a {
+                button {
+                    padding: 10px;
+                    background-color: $company_color;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: rgb(255, 255, 255);
+                    width: 60%;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+
+            i {
+                border: 1px solid black;
+                border-radius: 100px;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+
+        h1 {
+            font-size: 60px;
+            width: 90%;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+
+        p {
+            width: 90%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 25%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+    }
+
+
+
+    // CSS code for the second slide ad
+    .ad2 {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .left_side {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            h1 {
+                font-size: 3.5em;
+                width: 80%;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+            }
+
+
+            p {
+                width: 75%;
+                font-weight: bold;
+                color: white;
+            }
+            
+            a {
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: rgb(255, 255, 255);
+            }
+
+            a {
+                button {
+                    padding: 10px;
+                    width: 55%;
+                    background-color: white;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+// CSS for @Media for 1086PX
+@media(max-width:1086px) {
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+
+        h1 {
+            font-size: 50px;
+            width: 90%;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+
+        p {
+            width: 90%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 25%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+    }
+}
+
+
+// CSS for @Media for 1068PX
+@media(max-width:1068px) {
+    // CSS code for the ~ NAVBAR ~
+    .main-navbar-container {
+        justify-content: start;
+
+        // CSS for the first div holding the company logo and links
+        .first {
+            display: flex;
+            align-items: center;
+            width: 85%;
+
+            // CSS for the Company Logo Container
+            .company-logo {
+                border-right: 2px solid rgb(201, 201, 201);
+                margin-right: 10px;
+                padding-right: 10px;
+
+
+                img {
+                    width: 200px;
+                    height: 40px;
+                }
+            }
+
+            // CSS for the Navbar Links
+            .navbar-links {
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-right: 10px;
+                    font-weight: 500;
+                }
+
+                a:hover {
+                    color: $company_color;
+                    font-weight: bold;
+                }
+
+            }
+        }
+
+
+        // CSS for the second div holdings the button and icons
+        .button-icons {
+            width: 25%;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                button {
+                    padding: 10px;
+                    background-color: $company_color;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: rgb(255, 255, 255);
+                    width: 100%;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+
+            i {
+                border: 1px solid black;
+                border-radius: 100px;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+
+
+// CSS for @Media for 1040PX
+@media(max-width:1040px) {
+    // CSS code for the second slide ad
+    .ad2 {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .left_side {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            h1 {
+                font-size: 2.5em;
+                width: 80%;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+            }
+
+
+            p {
+                width: 75%;
+                font-weight: bold;
+                color: white;
+            }
+            
+            a {
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: rgb(255, 255, 255);
+            }
+
+            a {
+                button {
+                    padding: 10px;
+                    width: 60%;
+                    background-color: white;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+
+        .right_side {
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+
+}
+
+
+
+// CSS for @Media for 1024PX
+@media(max-width:1024px) {
+    // CSS code for the ~ NAVBAR ~
+    .main-navbar-container {
+        justify-content: start;
+
+        // CSS for the first div holding the company logo and links
+        .first {
+            display: flex;
+            align-items: center;
+            width: 85%;
+
+
+            .hambuger_menu {
+                display: initial;
+
+            }
+    
+
+            // CSS for the Company Logo Container
+            .company-logo {
+                border-right: 2px solid rgb(201, 201, 201);
+                margin-right: 10px;
+                padding-right: 10px;
+
+
+                img {
+                    width: 200px;
+                    height: 40px;
+                }
+            }
+
+            // CSS for the Navbar Links
+            .navbar-links {
+                display: none;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-right: 10px;
+                    font-weight: 500;
+                }
+
+                a:hover {
+                    color: $company_color;
+                    font-weight: bold;
+                }
+
+            }
+        }
+
+
+        // CSS for the second div holdings the button and icons
+        .button-icons {
+            width: 25%;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                button {
+                    display: none;
+                }
+            }
+
+            i {
+                border: 1px solid black;
+                border-radius: 100px;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+
+    // CSS for the main button when screen is smaller
+    .smaller_screen_button {
+        display: block;
+        z-index: 100;
+    }
+}
+
+
+
+// CSS for @Media for 1000PX
+@media(max-width:1000px) {
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+
+        h1 {
+            font-size: 30px;
+            width: 90%;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+
+        p {
+            width: 90%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 25%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+    }
+}
+
+
+// CSS for @Media for 960PX
+@media(max-width:960px) {
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+
+        h1 {
+            font-size: 30px;
+            width: 90%;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+
+        p {
+            width: 90%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 35%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+        }
+
+        .right_side {
+
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+// CSS for @Media for 702PX
+@media(max-width:702px) {
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+        text-align: center;
+
+        h1 {
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+
+        p {
+            width: 100%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 35%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+        }
+
+        .right_side {
+
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+
+    // CSS code for the second slide ad
+    .ad2 {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 10px;
+
+        .left_side {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            text-align: center;
+
+            h1 {
+                font-size: 30px;
+                width: 100%;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                text-align: center;
+            }
+
+
+            p {
+                width: 100%;
+                font-weight: bold;
+                color: white;
+            }
+            
+            a {
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: rgb(255, 255, 255);
+            }
+
+            a {
+                button {
+                    padding: 10px;
+                    width: 50%;
+                    background-color: white;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+
+    .wrapper {
+        height: 100%;
+    } 
+
+}
