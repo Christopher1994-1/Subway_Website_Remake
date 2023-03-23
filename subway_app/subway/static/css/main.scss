@@ -974,3 +974,2222 @@ $border_white: 2px solid white;
     margin-top: 10px;
     margin-left: 10px;
 }
+
+
+
+
+
+
+
+// Global Variables ======
+$company_color: #009132;
+$border_black: 2px solid black;
+$border_white: 2px solid white;
+
+
+
+
+
+
+// CSS for @Media for 1115PX
+@media(max-width:1115px) {
+    // CSS code for the ~ NAVBAR ~
+    .main-navbar-container {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+        // CSS for the first div holding the company logo and links
+        .first {
+            display: flex;
+            align-items: center;
+            width: 75%;
+
+
+            .hambuger_menu {
+                
+
+                label {
+                    font-size: 35px;
+                    cursor: pointer;
+                }
+
+                input {
+                    display: none;
+                }
+
+                .dropdown {
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(255, 255, 255);
+                    left: 0;
+                    top: 0;
+                    list-style: none;
+                    text-align: center;
+                    display: none;
+                    padding: 25px;
+
+                    .x-icons {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .x {
+                            i {
+                                font-size: 35px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .icons {
+                        i {
+                            border: 1px solid black;
+                            border-radius: 100px;
+                            padding: 5px;
+                            cursor: pointer;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    li {
+                        margin-bottom: 15px;
+                        padding: 10px;
+                        border-bottom: 1px solid rgb(161, 161, 161);
+
+                        a {
+                            text-decoration: none;
+                            font-size: 25px;
+                            font-weight: bold;
+                            color: black;
+
+                        }
+                    }
+                }
+            }
+
+
+
+
+            // CSS for the Company Logo Container
+            .company-logo {
+                border-right: 2px solid rgb(201, 201, 201);
+                margin-right: 10px;
+                padding-right: 10px;
+
+
+                img {
+                    width: 200px;
+                    height: 40px;
+                }
+            }
+
+            // CSS for the Navbar Links
+            .navbar-links {
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-right: 12px;
+                    font-weight: 500;
+                }
+
+                a:hover {
+                    color: $company_color;
+                    font-weight: bold;
+                }
+
+            }
+        }
+
+
+        // CSS for the second div holdings the button and icons
+        .button-icons {
+            width: 25%;
+            text-align: right;
+
+            a {
+                button {
+                    padding: 10px;
+                    background-color: $company_color;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: rgb(255, 255, 255);
+                    width: 60%;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+
+            i {
+                border: 1px solid black;
+                border-radius: 100px;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+
+        h1 {
+            font-size: 60px;
+            width: 90%;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+
+        p {
+            width: 90%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 25%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+    }
+
+
+    // CSS code for the second slide ad
+    .ad2 {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .left_side {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            h1 {
+                font-size: 3.5em;
+                width: 80%;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+            }
+
+
+            p {
+                width: 75%;
+                font-weight: bold;
+                color: white;
+            }
+            
+            a {
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: rgb(255, 255, 255);
+            }
+
+            a {
+                button {
+                    padding: 10px;
+                    width: 55%;
+                    background-color: white;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .rewards_and_deals_main_container {
+        width: 100%;
+        margin: auto;
+        height: 700px;
+    
+        .rewards {
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            position: relative;
+            margin: auto;
+    
+    
+    
+            .deal_black_one {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+    
+                h1 {
+                    font-size: 35px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 110px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 29%;
+                    height: 250px;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+    
+            .deal_white {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: rgb(255, 255, 255);
+    
+                h1 {
+                    font-size: 35px;
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                }
+    
+                a {
+                    color: rgb(0, 0, 0);
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 100px;
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: $company_color;
+                            color: white;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 29%;
+                    height: 250px;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+    
+    
+            .deal_black_two {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+    
+                h1 {
+                    font-size: 35px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 35px;
+                    margin-bottom: 34px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+    }
+
+
+    // CSS for the Best Seller Container
+    .best_sellers_main_container {
+        width: 85%;
+        margin: auto;
+
+        .sellers {
+            display: flex;
+            justify-content: space-around;
+
+
+            .item {
+                border: 2px solid rgba(175, 175, 175, 0.699);
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+                img {
+                    width: 160px;
+                    height: 120px;
+                }
+
+
+                h1 {
+                    font-size: 17px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+
+        img {
+            border-radius: 1px;
+            width: 500px;
+            height: 500px;
+        }
+
+        .side_stuff {
+            text-align: left;
+            width: 40%;
+            margin-right: 20px;
+
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 30px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+
+            a {
+                button {
+                    padding: 20px;
+                    background-color: $company_color;
+                    width: 65%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+
+
+    // CSS for the Last Div Container
+    .last_index {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        align-items: center;
+
+
+        img {
+            width: 600px;
+            height: 300px;
+        }
+
+
+        .stuff_inside {
+
+            h1 {
+                font-weight: bolder;
+                font-size: 30px;
+            }
+
+            p {
+                font-weight: bolder;
+            }
+
+            a {
+                button {
+                    padding: 20px;
+                    background-color: $company_color;
+                    width: 55%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+
+                }
+            }
+        }
+
+    }
+
+
+
+    // CSS for the Footer 
+    .main-footer-container {
+        padding: 10px;
+        border-top: 1px solid rgba(128, 128, 128, 0.555);
+        height: 70%;
+
+
+        // CSS for the container holding both 
+        .side_for_flex {
+            display: flex;
+            justify-content: space-between;
+            height: 80%;
+
+
+            // CSS for the left side links
+            .first_side {
+                display: flex;
+                justify-content: space-between;
+                width: 35%;
+
+                .first_list {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        color: black;
+                        font-weight: bolder;
+                        text-decoration: none;
+                        margin-bottom: 20px;
+
+                    }
+                }
+            }
+
+
+            // CSS for the right side links with dropdown select
+            .second_side {
+                margin-right: 30px;
+                display: flex;
+                flex-direction: column;
+                margin-right: 150px;
+
+                a {
+                    color: black;
+                    font-weight: bolder;
+                    margin-bottom: 50px;
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+
+        // CSS for the bottom side
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            border-top: 1px solid rgba(128, 128, 128, 0.555);
+            padding-top: 5px;
+
+
+            .links {
+                width: 70%;
+                a {
+                    color: black;
+                    font-weight: 100;
+                    text-decoration: none;
+                    font-size: 15px;
+                }
+            }
+
+
+            .social {
+                margin-right: 10px;
+
+                i {
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+            }
+
+
+        }
+
+    }
+
+
+    #last-paragraph {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 130px;
+    }
+
+}
+
+
+// CSS for @Media for 1086PX
+@media(max-width:1086px) {
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+
+        h1 {
+            font-size: 50px;
+            width: 90%;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+
+        p {
+            width: 90%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 25%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+    }
+}
+
+
+// CSS for @Media for 1068PX
+@media(max-width:1068px) {
+    // CSS code for the ~ NAVBAR ~
+    .main-navbar-container {
+        justify-content: start;
+
+        // CSS for the first div holding the company logo and links
+        .first {
+            display: flex;
+            align-items: center;
+            width: 85%;
+
+            // CSS for the Company Logo Container
+            .company-logo {
+                border-right: 2px solid rgb(201, 201, 201);
+                margin-right: 10px;
+                padding-right: 10px;
+
+
+                img {
+                    width: 200px;
+                    height: 40px;
+                }
+            }
+
+            // CSS for the Navbar Links
+            .navbar-links {
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-right: 10px;
+                    font-weight: 500;
+                }
+
+                a:hover {
+                    color: $company_color;
+                    font-weight: bold;
+                }
+
+            }
+        }
+
+
+        // CSS for the second div holdings the button and icons
+        .button-icons {
+            width: 25%;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                button {
+                    padding: 10px;
+                    background-color: $company_color;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: rgb(255, 255, 255);
+                    width: 100%;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+
+            i {
+                border: 1px solid black;
+                border-radius: 100px;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+
+
+// CSS for @Media for 1040PX
+@media(max-width:1040px) {
+    // CSS code for the second slide ad
+    .ad2 {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .left_side {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            h1 {
+                font-size: 2.5em;
+                width: 80%;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+            }
+
+
+            p {
+                width: 75%;
+                font-weight: bold;
+                color: white;
+            }
+            
+            a {
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: rgb(255, 255, 255);
+            }
+
+            a {
+                button {
+                    padding: 10px;
+                    width: 60%;
+                    background-color: white;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+
+        .right_side {
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+
+}
+
+
+
+// CSS for @Media for 1024PX
+@media(max-width:1024px) {
+    // CSS code for the ~ NAVBAR ~
+    .main-navbar-container {
+        justify-content: start;
+
+        // CSS for the first div holding the company logo and links
+        .first {
+            display: flex;
+            align-items: center;
+            width: 85%;
+
+
+            .hambuger_menu {
+                display: initial;
+
+            }
+    
+
+            // CSS for the Company Logo Container
+            .company-logo {
+                border-right: 2px solid rgb(201, 201, 201);
+                margin-right: 10px;
+                padding-right: 10px;
+
+
+                img {
+                    width: 200px;
+                    height: 40px;
+                }
+            }
+
+            // CSS for the Navbar Links
+            .navbar-links {
+                display: none;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-right: 10px;
+                    font-weight: 500;
+                }
+
+                a:hover {
+                    color: $company_color;
+                    font-weight: bold;
+                }
+
+            }
+        }
+
+
+        // CSS for the second div holdings the button and icons
+        .button-icons {
+            width: 25%;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                button {
+                    display: none;
+                }
+            }
+
+            i {
+                border: 1px solid black;
+                border-radius: 100px;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+
+    // CSS for the main button when screen is smaller
+    .smaller_screen_button {
+        display: block;
+        z-index: 100;
+    }
+}
+
+
+
+// CSS for @Media for 1000PX
+@media(max-width:1000px) {
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+
+        h1 {
+            font-size: 30px;
+            width: 90%;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+
+        p {
+            width: 90%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 25%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+    }
+
+
+    // CSS for the Best Seller Container
+    .best_sellers_main_container {
+        width: 85%;
+        margin: auto;
+
+        .sellers {
+            display: flex;
+            justify-content: space-around;
+
+
+            .item {
+                border: 2px solid rgba(175, 175, 175, 0.699);
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+                img {
+                    width: 120px;
+                    height: 90px;
+                }
+
+
+                h1 {
+                    font-size: 15px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// CSS for @Media for 963PX
+@media(max-width:963px) {
+    // CSS for the Last Div Container
+    .last_index {
+        display: none;
+    }
+
+
+    .last_index_smaller {
+        display: block;
+        display: flex;
+        flex-direction: column;
+
+
+
+        img {
+            width: 500px;
+            height: 300px;
+        }
+
+
+        .stuff_inside {
+            text-align: center;
+            padding: 10px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+
+            a {
+                button {
+                    padding: 15px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+// CSS for @Media for 960PX
+@media(max-width:960px) {
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+
+        h1 {
+            font-size: 30px;
+            width: 90%;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+
+        p {
+            width: 90%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 35%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+        }
+
+        .right_side {
+
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+
+}
+
+
+// CSS for @Media for 952PX
+@media(max-width:952px) {
+    .rewards_and_deals_main_container {
+        width: 100%;
+        margin: auto;
+        height: 700px;
+    
+        .rewards {
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            position: relative;
+            margin: auto;
+    
+    
+    
+            .deal_black_one {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 60px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 29%;
+                    height: 250px;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+    
+            .deal_white {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: rgb(255, 255, 255);
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: rgb(0, 0, 0);
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 80px;
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: $company_color;
+                            color: white;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 29%;
+                    height: 250px;
+                    border-radius: 10px;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+    
+    
+            .deal_black_two {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 35px;
+                    margin-bottom: 34px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+// CSS for @Media for 920PX
+@media(max-width:920px) {
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+
+        img {
+            border-radius: 1px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .side_stuff {
+            text-align: left;
+            width: 40%;
+            margin-right: 17px;
+
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 25px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 13px;
+            }
+
+            a {
+                button {
+                    padding: 18px;
+                    background-color: $company_color;
+                    width: 60%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// CSS for @Media for 908PX
+@media(max-width:908px) {
+    // CSS for the Best Seller Container
+    .best_sellers_main_container {
+        width: 85%;
+        margin: auto;
+
+        .sellers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            justify-items: center;
+
+
+            .item {
+                border: 2px solid rgba(175, 175, 175, 0.699);
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+                img {
+                    width: 160px;
+                    height: 120px;
+                }
+
+
+                h1 {
+                    font-size: 15px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// CSS for @Media for 830PX
+@media(max-width:830px) {
+    .rewards_and_deals_main_container {
+        width: 100%;
+        margin: auto;
+        height: 700px;
+        margin-bottom: 110px;
+    
+        .rewards {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+            margin: auto;
+    
+    
+    
+            .deal_black_one {
+                display: flex;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+                padding: 10px;
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 60px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    display: none;
+                }
+            }
+    
+            .deal_white {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: rgb(0, 0, 0);
+                    padding-left: 7px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: rgb(0, 0, 0);
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 80px;
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: $company_color;
+                            color: white;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    display: none;
+                }
+            }
+    
+    
+            .deal_black_two {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                border-radius: 10px;
+                text-align: left;
+                width: 90%;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+                background-color: black;
+                padding: 10px;
+    
+                h1 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    margin-top: 10px;
+                }
+    
+                p {
+                    font-weight: bolder;
+                    color: white;
+                    padding-left: 5px;
+                    font-size: 13px;
+                }
+    
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                }
+    
+                .btn-div {
+                    text-align: center;
+                    margin-top: 35px;
+                    margin-bottom: 34px;
+    
+    
+                    a {
+                        button {
+                            padding: 10px;
+                            width: 90%;
+                            background-color: white;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 15px;
+                            border-radius: 10px;
+                            border: none;
+                        }
+                    }
+                }
+    
+    
+                img {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+// CSS for @Media for 784PX
+@media(max-width:784px) {
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+
+        img {
+            border-radius: 1px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .side_stuff {
+            text-align: left;
+            width: 40%;
+            margin-right: 17px;
+
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 23px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 12px;
+            }
+
+            a {
+                button {
+                    padding: 15px;
+                    background-color: $company_color;
+                    width: 65%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+// CSS for @Media for 739PX
+@media(max-width:739px) {
+    // CSS for the Footer 
+    .main-footer-container {
+        padding: 10px;
+        border-top: 1px solid rgba(128, 128, 128, 0.555);
+        height: fit-content;
+
+
+        // CSS for the container holding both 
+        .side_for_flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            // CSS for the left side links
+            .first_side {
+                display: flex;
+                width: 100%;
+
+                .first_list {
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+
+                    a {
+                        color: black;
+                        font-weight: bolder;
+                        text-decoration: none;
+                        margin-bottom: 20px;
+
+                    }
+                }
+            }
+
+
+            // CSS for the right side links with dropdown select
+            .second_side {
+                margin-right: 30px;
+                display: flex;
+                flex-direction: column;
+                margin-right: 150px;
+
+                a {
+                    color: black;
+                    font-weight: bolder;
+                    margin-bottom: 50px;
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+
+        // CSS for the bottom side
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            display: none;
+            
+            margin-top: 30px;
+            border-top: 1px solid rgba(128, 128, 128, 0.555);
+            padding-top: 5px;
+
+
+            .links {
+                width: 70%;
+                a {
+                    color: black;
+                    font-weight: 100;
+                    text-decoration: none;
+                    font-size: 15px;
+                }
+            }
+
+
+            .social {
+                margin-right: 10px;
+
+                i {
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+            }
+
+
+        }
+
+
+        .social-links-smaller {
+            display: block;
+            margin-top: 20px;
+            border-top: 1px solid rgba(128, 128, 128, 0.555);
+
+            .social {
+                i {
+                    font-size: 30px;
+                }
+            }
+
+
+            .links {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                a {
+                    font-size: 13px;
+                    color: black;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+
+    }
+
+
+    #last-paragraph {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 130px;
+    }
+
+}
+
+
+// CSS for @Media for 702PX
+@media(max-width:702px) {
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+        text-align: center;
+
+        h1 {
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+
+        p {
+            width: 100%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 35%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+        }
+
+        .right_side {
+
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+
+    // CSS code for the second slide ad
+    .ad2 {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 10px;
+
+        .left_side {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            text-align: center;
+
+            h1 {
+                font-size: 30px;
+                width: 100%;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                text-align: center;
+            }
+
+
+            p {
+                width: 100%;
+                font-weight: bold;
+                color: white;
+            }
+            
+            a {
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: rgb(255, 255, 255);
+            }
+
+            a {
+                button {
+                    padding: 10px;
+                    width: 50%;
+                    background-color: white;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+
+    .wrapper {
+        height: 100%;
+    } 
+
+
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+
+        img {
+            border-radius: 1px;
+            width: 600px;
+            height: 330px;
+        }
+
+        .side_stuff {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin: auto;
+
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 23px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+
+            a {
+                button {
+                    padding: 15px;
+                    background-color: $company_color;
+                    width: 65%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+// CSS for @Media for 669PX
+@media(max-width:669px) {
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+
+        img {
+            border-radius: 1px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .side_stuff {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin: auto;
+
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 23px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+
+            a {
+                button {
+                    padding: 15px;
+                    background-color: $company_color;
+                    width: 65%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+// CSS for @Media for 631PX
+@media(max-width:631px) {
+    // CSS for the Best Seller Container
+    .best_sellers_main_container {
+        width: 85%;
+        margin: auto;
+
+        .sellers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            justify-items: center;
+
+
+            .item {
+                border: 2px solid rgba(175, 175, 175, 0.699);
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+                img {
+                    width: 140px;
+                    height: 100px;
+                }
+
+
+                h1 {
+                    font-size: 15px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// CSS for @Media for 963PX
+@media(max-width:963px) {
+
+    .last_index_smaller {
+        display: block;
+        display: flex;
+        flex-direction: column;
+
+
+
+        img {
+            width: 400px;
+            height: 270px;
+        }
+
+
+        .stuff_inside {
+            text-align: center;
+            padding: 10px;
+
+            h1 {
+                font-size: 25px;
+            }
+
+
+            a {
+                button {
+                    padding: 15px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// CSS for @Media for 567PX
+@media(max-width:567px) {
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+
+        img {
+            border-radius: 1px;
+            width: 400px;
+            height: 260px;
+        }
+
+        .side_stuff {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin: auto;
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 23px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+
+            a {
+                button {
+                    padding: 15px;
+                    background-color: $company_color;
+                    width: 65%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+// CSS for @Media for 525PX
+@media(max-width:525px) {
+
+    .rewards_and_deals_main_container {
+        margin-bottom: 150px;
+    }
+
+    // CSS for the Best Seller Container
+    .best_sellers_main_container {
+        width: 85%;
+        margin: auto;
+
+        .sellers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+            justify-items: center;
+
+
+            .item {
+                border: 2px solid rgba(175, 175, 175, 0.699);
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+                img {
+                    width: 120px;
+                    height: 80px;
+                }
+
+
+                h1 {
+                    font-size: 13px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+
+    .smaller_screen_button {
+        a {
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+}
