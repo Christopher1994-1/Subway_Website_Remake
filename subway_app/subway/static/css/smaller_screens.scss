@@ -194,7 +194,6 @@ $border_white: 2px solid white;
     }
 
 
-
     // CSS code for the second slide ad
     .ad2 {
         background-color: rgb(0, 0, 0);
@@ -474,6 +473,196 @@ $border_white: 2px solid white;
                 }
             }
         }
+    }
+
+
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+
+        img {
+            border-radius: 1px;
+            width: 500px;
+            height: 500px;
+        }
+
+        .side_stuff {
+            text-align: left;
+            width: 40%;
+            margin-right: 20px;
+
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 30px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+
+            a {
+                button {
+                    padding: 20px;
+                    background-color: $company_color;
+                    width: 65%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+
+
+    // CSS for the Last Div Container
+    .last_index {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        align-items: center;
+
+
+        img {
+            width: 600px;
+            height: 300px;
+        }
+
+
+        .stuff_inside {
+
+            h1 {
+                font-weight: bolder;
+                font-size: 30px;
+            }
+
+            p {
+                font-weight: bolder;
+            }
+
+            a {
+                button {
+                    padding: 20px;
+                    background-color: $company_color;
+                    width: 55%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+
+                }
+            }
+        }
+
+    }
+
+
+
+    // CSS for the Footer 
+    .main-footer-container {
+        padding: 10px;
+        border-top: 1px solid rgba(128, 128, 128, 0.555);
+        height: 70%;
+
+
+        // CSS for the container holding both 
+        .side_for_flex {
+            display: flex;
+            justify-content: space-between;
+            height: 80%;
+
+
+            // CSS for the left side links
+            .first_side {
+                display: flex;
+                justify-content: space-between;
+                width: 35%;
+
+                .first_list {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        color: black;
+                        font-weight: bolder;
+                        text-decoration: none;
+                        margin-bottom: 20px;
+
+                    }
+                }
+            }
+
+
+            // CSS for the right side links with dropdown select
+            .second_side {
+                margin-right: 30px;
+                display: flex;
+                flex-direction: column;
+                margin-right: 150px;
+
+                a {
+                    color: black;
+                    font-weight: bolder;
+                    margin-bottom: 50px;
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+
+        // CSS for the bottom side
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            border-top: 1px solid rgba(128, 128, 128, 0.555);
+            padding-top: 5px;
+
+
+            .links {
+                width: 70%;
+                a {
+                    color: black;
+                    font-weight: 100;
+                    text-decoration: none;
+                    font-size: 15px;
+                }
+            }
+
+
+            .social {
+                margin-right: 10px;
+
+                i {
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+            }
+
+
+        }
+
+    }
+
+
+    #last-paragraph {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 130px;
     }
 
 }
@@ -834,6 +1023,48 @@ $border_white: 2px solid white;
 }
 
 
+
+// CSS for @Media for 963PX
+@media(max-width:963px) {
+    // CSS for the Last Div Container
+    .last_index {
+        display: none;
+    }
+
+
+    .last_index_smaller {
+        display: block;
+        display: flex;
+        flex-direction: column;
+
+
+
+        img {
+            width: 500px;
+            height: 300px;
+        }
+
+
+        .stuff_inside {
+            text-align: center;
+            padding: 10px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+
+            a {
+                button {
+                    padding: 15px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
 // CSS for @Media for 960PX
 @media(max-width:960px) {
     // CSS code for the first slide ad
@@ -1094,6 +1325,60 @@ $border_white: 2px solid white;
 }
 
 
+
+// CSS for @Media for 920PX
+@media(max-width:920px) {
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+
+        img {
+            border-radius: 1px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .side_stuff {
+            text-align: left;
+            width: 40%;
+            margin-right: 17px;
+
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 25px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 13px;
+            }
+
+            a {
+                button {
+                    padding: 18px;
+                    background-color: $company_color;
+                    width: 60%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+
 // CSS for @Media for 908PX
 @media(max-width:908px) {
     // CSS for the Best Seller Container
@@ -1134,121 +1419,6 @@ $border_white: 2px solid white;
             }
         }
     }
-
-}
-
-// CSS for @Media for 702PX
-@media(max-width:702px) {
-    // CSS code for the first slide ad
-    .ad1 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-
-    .left_side {
-        padding: 10px;
-        text-align: center;
-
-        h1 {
-            width: 100%;
-            font-size: 30px;
-            font-weight: bold;
-            color: rgb(0, 0, 0);
-            text-align: center;
-        }
-
-
-        p {
-            width: 100%;
-            font-weight: bold;
-        }
-        
-        a {
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: black;
-        }
-
-        a {
-            button {
-                padding: 10px;
-                width: 35%;
-                background-color: $company_color;
-                font-weight: bold;
-                color: white;
-                border: none;
-                border-radius: 10px;
-            }
-        }
-        }
-
-        .right_side {
-
-            img {
-                width: 400px;
-                height: 400px;
-            }
-        }
-    }
-
-
-    // CSS code for the second slide ad
-    .ad2 {
-        background-color: rgb(0, 0, 0);
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-
-        margin-top: 10px;
-
-        .left_side {
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            text-align: center;
-
-            h1 {
-                font-size: 30px;
-                width: 100%;
-                font-weight: bold;
-                color: rgb(255, 255, 255);
-                text-align: center;
-            }
-
-
-            p {
-                width: 100%;
-                font-weight: bold;
-                color: white;
-            }
-            
-            a {
-                font-weight: bold;
-                margin-bottom: 10px;
-                color: rgb(255, 255, 255);
-            }
-
-            a {
-                button {
-                    padding: 10px;
-                    width: 50%;
-                    background-color: white;
-                    font-weight: bold;
-                    color: rgb(0, 0, 0);
-                    border: none;
-                    border-radius: 10px;
-                }
-            }
-        }
-    }
-
-
-    .wrapper {
-        height: 100%;
-    } 
 
 }
 
@@ -1452,6 +1622,406 @@ $border_white: 2px solid white;
 
 
 
+// CSS for @Media for 784PX
+@media(max-width:784px) {
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+
+        img {
+            border-radius: 1px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .side_stuff {
+            text-align: left;
+            width: 40%;
+            margin-right: 17px;
+
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 23px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 12px;
+            }
+
+            a {
+                button {
+                    padding: 15px;
+                    background-color: $company_color;
+                    width: 65%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+// CSS for @Media for 739PX
+@media(max-width:739px) {
+    // CSS for the Footer 
+    .main-footer-container {
+        padding: 10px;
+        border-top: 1px solid rgba(128, 128, 128, 0.555);
+        height: fit-content;
+
+
+        // CSS for the container holding both 
+        .side_for_flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            // CSS for the left side links
+            .first_side {
+                display: flex;
+                width: 100%;
+
+                .first_list {
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+
+                    a {
+                        color: black;
+                        font-weight: bolder;
+                        text-decoration: none;
+                        margin-bottom: 20px;
+
+                    }
+                }
+            }
+
+
+            // CSS for the right side links with dropdown select
+            .second_side {
+                margin-right: 30px;
+                display: flex;
+                flex-direction: column;
+                margin-right: 150px;
+
+                a {
+                    color: black;
+                    font-weight: bolder;
+                    margin-bottom: 50px;
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+
+        // CSS for the bottom side
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            display: none;
+            
+            margin-top: 30px;
+            border-top: 1px solid rgba(128, 128, 128, 0.555);
+            padding-top: 5px;
+
+
+            .links {
+                width: 70%;
+                a {
+                    color: black;
+                    font-weight: 100;
+                    text-decoration: none;
+                    font-size: 15px;
+                }
+            }
+
+
+            .social {
+                margin-right: 10px;
+
+                i {
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+            }
+
+
+        }
+
+
+        .social-links-smaller {
+            display: block;
+            margin-top: 20px;
+            border-top: 1px solid rgba(128, 128, 128, 0.555);
+
+            .social {
+                i {
+                    font-size: 30px;
+                }
+            }
+
+
+            .links {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                a {
+                    font-size: 13px;
+                    color: black;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+
+    }
+
+
+    #last-paragraph {
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 130px;
+    }
+
+}
+
+
+// CSS for @Media for 702PX
+@media(max-width:702px) {
+    // CSS code for the first slide ad
+    .ad1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+    .left_side {
+        padding: 10px;
+        text-align: center;
+
+        h1 {
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+
+        p {
+            width: 100%;
+            font-weight: bold;
+        }
+        
+        a {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a {
+            button {
+                padding: 10px;
+                width: 35%;
+                background-color: $company_color;
+                font-weight: bold;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+        }
+
+        .right_side {
+
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+
+    // CSS code for the second slide ad
+    .ad2 {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 10px;
+
+        .left_side {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            text-align: center;
+
+            h1 {
+                font-size: 30px;
+                width: 100%;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                text-align: center;
+            }
+
+
+            p {
+                width: 100%;
+                font-weight: bold;
+                color: white;
+            }
+            
+            a {
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: rgb(255, 255, 255);
+            }
+
+            a {
+                button {
+                    padding: 10px;
+                    width: 50%;
+                    background-color: white;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+
+    .wrapper {
+        height: 100%;
+    } 
+
+
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+
+        img {
+            border-radius: 1px;
+            width: 600px;
+            height: 330px;
+        }
+
+        .side_stuff {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin: auto;
+
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 23px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+
+            a {
+                button {
+                    padding: 15px;
+                    background-color: $company_color;
+                    width: 65%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+// CSS for @Media for 669PX
+@media(max-width:669px) {
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+
+        img {
+            border-radius: 1px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .side_stuff {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin: auto;
+
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 23px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+
+            a {
+                button {
+                    padding: 15px;
+                    background-color: $company_color;
+                    width: 65%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}
+
+
 // CSS for @Media for 631PX
 @media(max-width:631px) {
     // CSS for the Best Seller Container
@@ -1488,6 +2058,94 @@ $border_white: 2px solid white;
                     font-size: 15px;
                     color: black;
                     font-weight: bolder;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// CSS for @Media for 963PX
+@media(max-width:963px) {
+
+    .last_index_smaller {
+        display: block;
+        display: flex;
+        flex-direction: column;
+
+
+
+        img {
+            width: 400px;
+            height: 270px;
+        }
+
+
+        .stuff_inside {
+            text-align: center;
+            padding: 10px;
+
+            h1 {
+                font-size: 25px;
+            }
+
+
+            a {
+                button {
+                    padding: 15px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// CSS for @Media for 567PX
+@media(max-width:567px) {
+    // CSS for the Second to Last Div Container
+    .secont_to_last_div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+
+        img {
+            border-radius: 1px;
+            width: 400px;
+            height: 260px;
+        }
+
+        .side_stuff {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin: auto;
+
+            h1 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 23px;
+            }
+
+            p {
+                font-weight: bolder;
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+
+            a {
+                button {
+                    padding: 15px;
+                    background-color: $company_color;
+                    width: 65%;
+                    font-size: 20px;
+                    color: white;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    border: none;
                 }
             }
         }

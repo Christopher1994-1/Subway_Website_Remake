@@ -44,6 +44,7 @@ $border_white: 2px solid white;
                 text-align: center;
                 display: none;
                 padding: 25px;
+                z-index: 10;
 
                 .x-icons {
                     display: flex;
@@ -745,4 +746,231 @@ $border_white: 2px solid white;
             }
         }
     }
+}
+
+
+
+// CSS for the Second to Last Div Container
+.secont_to_last_div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+
+    img {
+        border-radius: 1px;
+    }
+
+    .side_stuff {
+        text-align: left;
+        width: 40%;
+        margin-right: 25px;
+
+        h1 {
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+
+        a {
+            button {
+                padding: 20px;
+                background-color: $company_color;
+                width: 35%;
+                font-size: 20px;
+                color: white;
+                font-weight: bolder;
+                border-radius: 10px;
+                border: none;
+            }
+        }
+    }
+}
+
+
+
+
+// CSS for the Last Div Container
+.last_index {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    align-items: center;
+
+
+    .stuff_inside {
+        padding-left: 5px;
+
+
+        h1 {
+            font-weight: bolder;
+        }
+
+        p {
+            font-weight: bolder;
+        }
+
+        a {
+            button {
+                padding: 20px;
+                background-color: $company_color;
+                width: 35%;
+                font-size: 20px;
+                color: white;
+                font-weight: bolder;
+                border-radius: 10px;
+                border: none;
+
+            }
+        }
+    }
+
+}
+
+
+
+
+// CSS for the Last Div Container
+.last_index_smaller {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    align-items: center;
+    display: none;
+
+
+    .stuff_inside {
+
+        h1 {
+            font-weight: bolder;
+        }
+
+        p {
+            font-weight: bolder;
+        }
+
+        a {
+            button {
+                padding: 20px;
+                background-color: $company_color;
+                width: 35%;
+                font-size: 20px;
+                color: white;
+                font-weight: bolder;
+                border-radius: 10px;
+                border: none;
+
+            }
+        }
+    }
+
+}
+
+
+
+
+// CSS for the Footer 
+.main-footer-container {
+    padding: 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.555);
+    height: 70%;
+
+
+    // CSS for the container holding both 
+    .side_for_flex {
+        display: flex;
+        justify-content: space-between;
+        height: 80%;
+
+
+        // CSS for the left side links
+        .first_side {
+            display: flex;
+            justify-content: space-between;
+            width: 35%;
+
+            .first_list {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    color: black;
+                    font-weight: bolder;
+                    text-decoration: none;
+                    margin-bottom: 20px;
+
+                }
+            }
+        }
+
+
+        // CSS for the right side links with dropdown select
+        .second_side {
+            margin-right: 30px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 150px;
+
+            a {
+                color: black;
+                font-weight: bolder;
+                margin-bottom: 50px;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+
+    // CSS for the bottom side
+    .social-links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        border-top: 1px solid rgba(128, 128, 128, 0.555);
+        padding-top: 5px;
+
+
+        .links {
+            a {
+                color: black;
+                font-weight: 100;
+                text-decoration: none;
+                font-size: 15px;
+            }
+        }
+
+
+        .social {
+            margin-right: 10px;
+
+            i {
+                font-size: 20px;
+                margin-right: 5px;
+            }
+        }
+
+
+    }
+
+
+    .social-links-smaller {
+        display: none;
+    }
+
+}
+
+
+#last-paragraph {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
 }
